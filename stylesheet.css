@@ -1,0 +1,73 @@
+body {
+     font-family: "Tsukushi A round gothic", "santyoume-font";
+      }
+
+header{
+  background-color: #E7E7DB;
+  border: 1px solid #E7E7DB;
+  width: 100%;
+  height:60px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.container{
+  width: 80%;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+.button{
+  border-radius: 50%;
+  background-color:white;
+  width: 40px;
+  height: 40px;
+  /*margin-top: 30px;
+  margin-right: 20px;
+  margin-left: 200px;*/
+  font-size: 1.5rem;
+  border: 0;
+}
+header i{
+  color: #A4D2B1;
+}
+header ul{
+  float: right;
+  margin-top: 20px;
+}
+header li{
+  display: inline-block;
+  margin-right: 30px;
+}
+
+.header-right p{
+  font-size: 40px;
+  display: inline-block;
+  float: left;
+  color: #A4D2B1;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
+/*top*/
+.cadegory-btn img{
+  height: 250px;
+  width: 250px;
+  margin-right: 8px;
+}
+.cadegory-btn
+{
+text-align: center;
+}
+
+.title .text{
+ font-size: px;
+}
+
+.clear{
+  clear: both;
+}
+.title{
+  clear: both;
+}
