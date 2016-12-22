@@ -12,6 +12,10 @@ header{
   z-index: 10;
 }
 
+ul{
+  list-style: none;
+}
+}
 .container{
   width: 80%;
   padding: 0 15px;
@@ -51,6 +55,10 @@ header li{
 }
 
 /*top*/
+
+main{
+  margin-top: 90px;
+}
 .cadegory-btn img{
   height: 250px;
   width: 250px;
@@ -60,14 +68,82 @@ header li{
 {
 text-align: center;
 }
-
-.title .text{
- font-size: px;
-}
-
-.clear{
-  clear: both;
-}
 .title{
-  clear: both;
+  text-align: center;
+}
+.title .text{
+ font-size: 50px;
+ color: #A4D2B1;
+}
+
+.title .detail{
+  font-size: 30px;
+  color: #8EC6CC;
+  }
+.sky-title{
+  width: 980px;
+  height: 98px;
+  margin-top: 40px;
+}
+.item-img, .item-img2{
+  border-radius:15%;
+  width: 400px;
+  height: 280px;
+  /*margin: 0 30px;*/
+  margin-top: 30px;
+}
+
+.item-img{
+  margin-right: 10px;
+}
+
+.item-img2{
+  margin-left: 10px;
+}
+#sky li{
+  display: inline-block;
+  text-align: center;
+}
+
+.name{
+  font-size: 50px;
+}
+.price{
+  font-size: 40px;
+}
+.store{
+  font-size: 30px;
+}
+
+#sky p{
+  color: #B98D53;
+}
+/*sky のbutton*/
+button{
+border-radius: 10px;        /* CSS3草案 */
+    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
+    -moz-border-radius: 10px;
+    border:0;
+    width: 500px;
+    height: 120px;
+    background-color: #8EC6CC;
+    margin-top: 40px;
+    margin-bottom: 50px;
+}
+
+button h2{
+  font-size: 50px;
+  font-family: Tsukushi A round gothic;
+  color: white;
+  margin-top: 30px;
+}
+
+/*land*/
+#land li{
+  display: inline-block;
+  text-align: center;
+}
+
+.more2{
+  background-color: #A4D2B1;
 }
