@@ -1,6 +1,6 @@
 body {
-     font-family: "Tsukushi A round gothic", "santyoume-font";
-      }
+  font-family: "Tsukushi A round gothic", "santyoume-font";
+}
 
 header{
   background-color: #E7E7DB;
@@ -15,6 +15,7 @@ header{
 ul{
   list-style: none;
 }
+
 .container{
   width: 80%;
   padding: 0 15px;
@@ -111,6 +112,8 @@ text-align: center;
 .item-img, .item-img2{
   border-radius:15%;
   width: 400px;
+
+  /* heightはautoにしたほうがいいね。縦横比崩れてるので。元画像の比率を4:3に直すとキレイかも(神田) */
   height: 280px;
   /*margin: 0 30px;*/
   margin-top: 30px;
