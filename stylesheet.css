@@ -3,14 +3,15 @@ body {
       }
 
 header{
-  background-color: #E7E7DB;
-  border: 1px solid #E7E7DB;
+  background-color: rgba(255, 255, 255, 0);
+  border: 0px solid #E7E7DB;
   width: 100%;
   /*height:80px;*/
   position: fixed;
   top: 0;
   z-index: 10;
 }
+
 
 li{
   list-style: none;
@@ -20,6 +21,7 @@ li{
   padding: 0 15px;
   margin: 0 auto;
   text-align: center;
+  max-width: 970px;
 }
 .top-img{
   width: auto;
@@ -47,7 +49,7 @@ header.button{
 }
 
 .header-right .button i{
-  font-size: 2rem;
+  font-size: 3rem;
 }
 header i{
   color: #A4D2B1;
@@ -61,14 +63,21 @@ header li{
   margin-right: 10px;
 }
 
-.header-left p{
-  font-size: 30px;
+.disappear{
+  /*font-size: 30px;*/
+  color: #A4D2B1;
+  display: none;
+}
+
+.header-left {
+  font-size: 40px;
   display: inline-block;
   float: left;
   color: #A4D2B1;
   margin: 0;
   margin-top: 10px;
   margin-left: 30px;
+  cursor: pointer;
 }
 
 /*top*/
@@ -77,15 +86,18 @@ header li{
   width:100%;
   padding:200px 0 400px 0;
   background-size: cover;
-  text-align:center;
+  /*text-align:center;*/
+  background-position: 20% 40%;
 }
-.mejiro{
+.usagidayo{
   background-image: url(./image/usagidayo.png);
   width:100%;
   padding:200px 0 400px 0;
   background-size:cover;
   min-width: 800px;
-  text-align:center;
+  /*text-align:center;*/
+  /*position: center center;*/
+    background-position: 20% 40%;
 }
 
 .kingyo{
@@ -93,7 +105,9 @@ header li{
   width:100%;
   padding:200px 0 400px 0;
   background-size:cover;
-  text-align:center;
+  /*text-align:center;*/
+  /*position: center center;*/
+    background-position: 20% 40%;
 }
 
 .favorite i{
@@ -117,7 +131,7 @@ header li{
   margin-right: 8px;
 }
 .cadegory-btn{
- /*text-align: center;*/
+ text-align: center;
 }
 .title{
   text-align: center;
@@ -132,7 +146,7 @@ header li{
   font-size: 15px;
   color: #8EC6CC;
   width: 100%;
-  text-align: left;
+  text-align: center;
   margin: 0 20px;
   }
   .other{
@@ -332,3 +346,7 @@ border: 0;
 footer{
   margin-bottom: 100px;
 }
+
+/*.heart i{
+  display: none;
+}*/
