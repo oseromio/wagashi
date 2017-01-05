@@ -19,11 +19,34 @@
   <!--透明なheader  -->
   <header>
     <div class="header-left">
-      <p>わがしzoo</p>
+      <div id="top-btn">
+        わがしzoo
+      </div>
     </div>
 
      <div class="header-right">
        <ul>
+         <li class="disappear">
+           <a href="#sky">
+               <button class="button">
+                 <i class="fa fa-cloud" aria-hidden="true"></i>
+               </button>
+           </a>
+         </li>
+         <li class="disappear">
+            <a href="#land">
+               <button class="button">
+                 <i class="fa fa-leaf" aria-hidden="true"></i>
+               </button>
+            </a>
+         </li>
+         <li class="disappear">
+           <a href="#river">
+               <button class="button">
+                 <i class="fa fa-tint" aria-hidden="true"></i>
+               </button>
+          </a>
+         </li>
          <li>
           <button class="button">
             <i class="fa fa-heart" aria-hidden="true"></i>
@@ -63,7 +86,7 @@
              <div class="wagashi-box piyo item active">
                <!-- <img src="./image/piyo-wagashi.png" class="top-img" style="height:300px;"> -->
              </div>
-             <div class="wagashi-box mejiro item">
+             <div class="wagashi-box usagidayo item">
                <!-- <img src="./image/wagashi-mejiro.png" class="top-img" style="height:300px;"> -->
              </div>
              <div class="wagashi-box item kingyo">
@@ -89,13 +112,13 @@
 
     <div class="cadegory-btn">
       <!-- <div class="container"> -->
-          <img src="./image/marusky.png" class="sky">
-          <img src="./image/mamerikuuu.png" class="land">
-          <img src="./image/mameriku.png" class="river">
+          <a href="#sky"><img src="./image/marusky.png" class="sky"></a>
+          <a href="#land"><img src="./image/mamerikuuu.png" class="land"></a>
+          <a href="#river"><img src="./image/mameriku.png" class="river"></a>
 
-          <img src="./image/skybtn.png" class="other">
-          <img src="./image/landbtn.png" class="other">
-          <img src="./image/seabtn.png" class="other">
+          <a href="#sky"><img src="./image/skybtn.png" class="other"></a>
+          <a href="#land"><img src="./image/landbtn.png" class="other"></a>
+          <a href="#river"><img src="./image/river5.png" class="other"></a>
       <!-- </div> -->
     </div>
 
@@ -106,28 +129,31 @@
           <ul>
             <li>
               <img src="./image/wagashi-hiyoko.png" class="item-img">
-                <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+                <p class="heart"><span><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></span>
+                </p>
+
+                <!-- <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div> -->
                 <p class="name">まる笑み</p>
                 <p class="price">¥450 (+tax)</p>
                 <p class="store">虎屋</p>
             </li>
             <li>
               <img src="./image/wagashi-tidori.png" class="item-img2">
-              <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+              <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
               <p class="name">和三盆ちどり</p>
               <p class="price">¥450 (+tax)</p>
               <p class="store">先斗町駿河屋</p>
            </li>
            <li class="pc">
              <img src="./image/abird.png" class="item-img">
-             <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+             <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
              <p class="name">小さい鳥</p>
              <p class="price">¥450 (+tax)</p>
              <p class="store">先斗町駿河屋</p>
            </li>
            <li class="pc">
              <img src="./image/threebird.png" class="item-img2">
-             <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+             <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
              <p class="name">豆鳥3匹</p>
              <p class="price">¥450 (+tax)</p>
              <p class="store">奈良屋</p>
@@ -146,15 +172,15 @@
       <div class="container">
           <ul>
             <li>
-              <img src="./image/neko.png" class="item-img">
-              <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+              <img src="./image/nekocopy.png" class="item-img">
+              <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
               <p class="name">ねこ</p>
               <p class="price">¥450 (+tax)</p>
               <p class="store">稲豊園</p>
             </li>
             <li>
               <img src="./image/usagi-wagashi.png" class="item-img2">
-              <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+              <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
               <p class="name">うさぎ薯蕷</p>
               <p class="price">¥450 (+tax)</p>
               <p class="store">高山堂</p>
@@ -162,14 +188,14 @@
 
            <li class="pc">
              <img src="./image/usagiwagasi.png" class="item-img">
-             <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+             <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
              <p class="name">おひなうさぎ</p>
              <p class="price">¥450 (+tax)</p>
              <p class="store">＊＊屋</p>
           </li>
           <li class="pc">
             <img src="./image/yukiusagi-wagashi.png" class="item-img">
-            <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+            <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
             <p class="name">ゆきうさぎ</p>
             <p class="price">¥450 (+tax)</p>
             <p class="store">＊＊屋</p>
@@ -186,7 +212,7 @@
         <ul>
           <li>
             <img src="./image/kingyo-wagashi..png" class="item-img">
-            <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+            <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
             <p class="name">金魚</p>
             <p class="price">¥450 (+tax)</p>
             <p class="store">みどり屋</p>
@@ -194,7 +220,7 @@
           <li>
             <img src="./image/wagashi-kawaiikoi.png" class="item-img
             2">
-            <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+            <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
             <p class="name">こい</p>
             <p class="price">¥450 (+tax)</p>
             <p class="store">みどり屋</p>
@@ -202,14 +228,14 @@
 
          <li class="pc">
            <img src="./image/kingyo2.png" class="item-img">
-           <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+           <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
            <p class="name">きんぎょ</p>
            <p class="price">¥450 (+tax)</p>
            <p class="store">＊＊屋</p>
         </li>
         <li class="pc">
           <img src="./image/wagashi-tai.png" class="item-img2">
-          <p><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
+          <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
           <p class="name">めでたい</p>
           <p class="price">¥450 (+tax)</p>
           <p class="store">＊＊屋</p>
