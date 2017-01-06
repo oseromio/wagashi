@@ -2,7 +2,7 @@ body {
      font-family: "Tsukushi A round gothic", "santyoume-font";
       }
 
-header{
+.header{
   background-color: rgba(255, 255, 255, 0);
   border: 0px solid #E7E7DB;
   width: 100%;
@@ -10,8 +10,15 @@ header{
   position: fixed;
   top: 0;
   z-index: 10;
+  box-shadow: 1px 1px 3px #E5D6B5;
 }
 
+header{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
 
 li{
   list-style: none;
@@ -32,45 +39,49 @@ header.button{
   background-color:white;
   width: 30%;
   height: 30%;
-  /*margin-top: 30px;
-  margin-right: 20px;
-  margin-left: 200px;*/
-  font-size: 1rem;
   border: 0;
   background-color: white;
 }
 
-.header-right .button{
+/*.header-right .button{
   background-color: white;
   border: 0px;
   border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
+  width: 30px;
+  height: 30px;
+}*/
 
 .header-right .button i{
-  font-size: 3rem;
+  font-size: 2rem;
+  margin-left: 5px;
+  margin-top: 5px;
+  transition: all 0.3s;
 }
-header i{
+.header-right i{
   color: #A4D2B1;
 }
-header ul{
+
+.header-right i:hover{
+  color: #EB704C;
+  transform: scale(1.5)
+}
+.header-right ul{
   float: right;
   margin-top: 20px;
 }
-header li{
+.header-right li{
   display: inline-block;
   margin-right: 10px;
 }
 
-.disappear{
+header .disappear{
   /*font-size: 30px;*/
   color: #A4D2B1;
   display: none;
 }
 
 .header-left {
-  font-size: 40px;
+  font-size: 30px;
   display: inline-block;
   float: left;
   color: #A4D2B1;
@@ -78,36 +89,38 @@ header li{
   margin-top: 10px;
   margin-left: 30px;
   cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-left:hover{
+  color: #EB704C;
+  transform: scale(1.1)
 }
 
 /*top*/
+
 .piyo{
   background-image: url(./image/piyo-wagashi.png);
   width:100%;
-  padding:200px 0 400px 0;
+  padding:100px 0 200px 0;
   background-size: cover;
-  /*text-align:center;*/
-  background-position: 20% 40%;
+  background-position: center center;
 }
 .usagidayo{
-  background-image: url(./image/usagidayo.png);
+  background-image: url(./image/bigpiyo.jpg);
   width:100%;
-  padding:200px 0 400px 0;
-  background-size:cover;
-  min-width: 800px;
-  /*text-align:center;*/
-  /*position: center center;*/
-    background-position: 20% 40%;
+  padding:100px 0 200px 0;
+  background-size: cover;
+  background-position: center center;
 }
 
 .kingyo{
-  background-image: url(./image/kingyogyogyo.png);
+  background-image: url(./image/usapiyo.jpg);
   width:100%;
-  padding:200px 0 400px 0;
-  background-size:cover;
-  /*text-align:center;*/
-  /*position: center center;*/
-    background-position: 20% 40%;
+  padding:100px 0 200px 0;
+  background-size: cover;;
+  position: center center;
+  background-position: center center;
 }
 
 .favorite i{
@@ -133,6 +146,19 @@ header li{
 .cadegory-btn{
  text-align: center;
 }
+.sky:hover{
+  transform: scale(1.1);
+}
+.land:hover{
+  transform: scale(1.1);
+}
+.river:hover{
+  transform: scale(1.1);
+}
+
+.other:hover{
+  transform: scale(1.1);
+}
 .title{
   text-align: center;
 }
@@ -151,8 +177,15 @@ header li{
   }
   .other{
     display: none;
+    transition: all 0.6s;
   }
+.item-left{
+  margin-right: 15px;
+}
 
+.item-right{
+  margin-left: 15px;
+}
 /*sky*/
 #sky ul{
   padding-left: 0px;
@@ -164,8 +197,8 @@ header li{
 }
 .item-img, .item-img2{
   border-radius:15%;
-  width: 170px;
-  height: 119px;
+  width: 130px;
+  height: auto;
   /*margin: 0 30px;*/
   margin-top: 30px;
 }
@@ -190,13 +223,13 @@ header li{
 }
 
 .name{
-  font-size: 28px;
+  font-size: 20px;
 }
 .price{
-  font-size: 18px;
+  font-size: 15px;
 }
 .store{
-  font-size: 18px;
+  font-size: 40%;
 }
 
 #sky p{
@@ -209,7 +242,7 @@ header li{
   display: none;
 }
 /*sky のbutton*/
- main button{
+ .more{
 border-radius: 10px;        /* CSS3草案 */
     -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
     -moz-border-radius: 10px;
@@ -221,14 +254,25 @@ border-radius: 10px;        /* CSS3草案 */
     margin-right:40px;
     margin-left: 40px;
     margin-bottom: 50px;
-
+    transition: all 0.4s;
+    margin: 0 auto;
 }
 
-.more{
+.more h2{
   font-size: 25px;
   font-family: Tsukushi A round gothic;
   color: white;
-  margin-top: 10px;
+  padding-top: 20px;
+}
+
+
+
+.more:hover{
+  background-color: #458FB5;
+}
+
+.more2:hover{
+  background-color: #449C75;
 }
 
 /*land*/
@@ -285,29 +329,36 @@ border-radius: 10px;        /* CSS3草案 */
 
 
 /*footer*/
-footer button{
+
+footer{
+  background-color: #E5D6B5;
+  padding-bottom: 20px;
+}
+footer .contact{
   border-radius: 50%;
-background-color:#ca3356;
-width: 50px;
-height: 50px;
-margin-top: 30px;
-margin-right: 10px;
-font-size: 2.5rem;
-border: 0;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-right: 10px;
+  font-size: 3.5rem;
+  border: 0;
+  transition: all 0.3s;
 }
 
 .big-contact{
   border: 0px solid #C79465;
   background-color: #C79465;
   padding-bottom: 20px;
-  padding-top: 20px;
+  padding-top: 10px;
 }
+
 
 .big-contact h2{
   color: white;
   text-align: center;
   font-size: 30px;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .big-contact li{
@@ -317,6 +368,10 @@ border: 0;
   margin-bottom: 20px;
 }
 
+.big-contact ul{
+  padding-left: 0px;
+}
+
 .contact-button li{
   display: inline-block;
   margin: 0 auto;
@@ -324,8 +379,11 @@ border: 0;
 
 .contact-button i{
   color: white;
-  margin: 0 auto;
 }
+
+/*.contact .fa-facebook{
+  margin-top: 20px;
+}*/
 
 .contact-button{
  text-align: center;
@@ -344,9 +402,91 @@ border: 0;
 }
 
 footer{
-  margin-bottom: 100px;
+  /*margin-bottom: 100px;*/
+  margin-top: 60px;
 }
 
-/*.heart i{
-  display: none;
-}*/
+.facebook:hover{
+  background-color: #458FB5;
+  transform: scale(1.1);
+}
+
+.twitter:hover{
+  background-color: #449C75;
+  transform: scale(1.1);
+}
+
+.insta:hover{
+  background-color: #41468D;
+  transform: scale(1.1);
+}
+
+footer i:hover{
+  transform: scale(1.1);
+}
+
+.contact i{
+  margin-top: 5px;
+}
+
+.heart i{
+  cursor: pointer;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+/*ハンバーガーメニュー*/
+#ham-menu{
+  border: 3px solid #E5D6B5:
+  height: 50%;
+  width: 50%;
+  margin-top: 60px;
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: none;border-radius: 10%;
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.95)
+  box-shadow
+}
+
+#ham-menu ul{
+  /*margin-right: 30px;*/
+  /*background-color: skyblue;*/
+  padding-left: 0px;
+  padding: 10px 20px;
+  opacity: 0.8;
+  padding-bottom: 30px;
+}
+
+#ham-menu li{
+  font-size: 20px;;
+  border-bottom: 1px solid #635E5D;
+  width: auto;
+  margin-right: 10px;
+  line-height: 50px;
+  display: block;
+  transition: all 0.3s;
+  color: #635E5D;
+  margin-top: 10px;
+}
+
+#ham-menu .info{
+  font-size:15px;
+}
+
+#ham-menu li:hover{
+  cursor: pointer;
+  transform: scale(1.1)
+}
+
+#ham-menu a{
+  text-decoration: none;
+}
+
+#ham-menu i{
+  margin-right: 10px;
+}
