@@ -18,52 +18,66 @@
 <body>
   <!--透明なheader  -->
   <header>
-    <div class="header-left">
-      <div id="top-btn">
-        わがしzoo
-      </div>
+    <div class="header">
+        <div class="header-left">
+          <div id="top-btn">
+            わがしzoo
+          </div>
+        </div>
+
+         <div class="header-right">
+           <ul>
+             <li class="disappear">
+               <a href="#sky">
+                   <div class="button">
+                     <i class="fa fa-cloud" aria-hidden="true"></i>
+                   </div>
+               </a>
+             </li>
+             <li class="disappear">
+                <a href="#land">
+                   <div class="button">
+                     <i class="fa fa-leaf" aria-hidden="true"></i>
+                   </div>
+                </a>
+             </li>
+             <li class="disappear">
+               <a href="#river">
+                   <div class="button">
+                     <i class="fa fa-tint" aria-hidden="true"></i>
+                   </div>
+              </a>
+             </li>
+             <li>
+              <div class="button">
+                <i class="fa fa-heart" aria-hidden="true"></i>
+              </div>
+            </li>
+            <li>
+              <div class="button">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+              </div>
+            </li>
+            <li>
+               <div class="button bars">
+                 <i class="fa fa-bars" aria-hidden="true"></i>
+               </div>
+            </li>
+          </ul>
+        </div>
     </div>
 
-     <div class="header-right">
-       <ul>
-         <li class="disappear">
-           <a href="#sky">
-               <button class="button">
-                 <i class="fa fa-cloud" aria-hidden="true"></i>
-               </button>
-           </a>
-         </li>
-         <li class="disappear">
-            <a href="#land">
-               <button class="button">
-                 <i class="fa fa-leaf" aria-hidden="true"></i>
-               </button>
-            </a>
-         </li>
-         <li class="disappear">
-           <a href="#river">
-               <button class="button">
-                 <i class="fa fa-tint" aria-hidden="true"></i>
-               </button>
-          </a>
-         </li>
-         <li>
-          <button class="button">
-            <i class="fa fa-heart" aria-hidden="true"></i>
-          </button>
-        </li>
-        <li>
-          <button class="button">
-            <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-          </button>
-        </li>
-        <li>
-           <button class="button bars">
-             <i class="fa fa-bars" aria-hidden="true"></i>
-           </button>
-        </li>
-       </ul>
-     </div>
+    <!-- ハンバーガーメニュー作成 -->
+    <div id="ham-menu">
+      <ul>
+          <a href="#about"><li class="info"><i class="fa fa-question-circle" aria-hidden="true"></i>わがしzooとは</li></a>
+          <a href="#sky"><li><i class="fa fa-cloud" aria-hidden="true"></i>空</li></a>
+          <a href="#land"><li><i class="fa fa-leaf" aria-hidden="true"></i>陸</li></a>
+          <a href="#river"><li><i class="fa fa-tint" aria-hidden="true"></i>河</li></a>
+          <a href="#contact"><li><i class="fa fa-envelope-o" aria-hidden="true"></i>お問い合わせ</li></a>
+      </ul>
+    </div>
+    <!-- <div id="menu-background"></div> -->
   </header>
 
   <main>
@@ -98,16 +112,16 @@
 
 
     <div class="title">
-      <div class="container">
-        <p class="text">わがしzoo</p>
-        <p class="detail">動物をかたどった和菓子を専門にしています。</p>
-        <p class="text">どうぶつをさがす</p>
-        <p class="detail">空の動物・陸の動物・河の動物・・・。<br>
-                          かわいい動物和菓子達があなたを待っています。<br>
-                          あなたが好きな動物はどこ住んでいますか？</p>
-     <!-- </div> -->
-      <!-- </div> -->
-      </div>
+      <div id="about">
+          <div class="container">
+            <p class="text">わがしzoo</p>
+            <p class="detail">動物をかたどった和菓子を専門にしています。</p>
+            <p class="text">どうぶつをさがす</p>
+            <p class="detail">空の動物・陸の動物・河の動物・・・。<br>
+                              かわいい動物和菓子達があなたを待っています。<br>
+                              あなたが好きな動物はどこ住んでいますか？</p>
+           </div>
+    </div>
     </div>
 
     <div class="cadegory-btn">
@@ -127,17 +141,15 @@
       <img src="./image/skytitle2.png" class="sky-title">
       <div class="container">
           <ul>
-            <li>
+            <li class="item-left">
               <img src="./image/wagashi-hiyoko.png" class="item-img">
                 <p class="heart"><span><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></span>
                 </p>
-
-                <!-- <div class="heart"><i class="fa fa-heart" aria-hidden="true"></i></div> -->
                 <p class="name">まる笑み</p>
                 <p class="price">¥450 (+tax)</p>
                 <p class="store">虎屋</p>
             </li>
-            <li>
+            <li class="item-right">
               <img src="./image/wagashi-tidori.png" class="item-img2">
               <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
               <p class="name">和三盆ちどり</p>
@@ -161,7 +173,7 @@
 
 
          </ul>
-         <button class="more">もっとみる</button>
+         <div class="more"><h2>もっとみる</h2></div>
      </div>
    </div>
 
@@ -171,14 +183,14 @@
       <img src="./image/riku-title.png" class="sky-title">
       <div class="container">
           <ul>
-            <li>
+            <li class="item-left">
               <img src="./image/nekocopy.png" class="item-img">
               <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
               <p class="name">ねこ</p>
               <p class="price">¥450 (+tax)</p>
               <p class="store">稲豊園</p>
             </li>
-            <li>
+            <li class="item-left">
               <img src="./image/usagi-wagashi.png" class="item-img2">
               <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
               <p class="name">うさぎ薯蕷</p>
@@ -201,7 +213,7 @@
             <p class="store">＊＊屋</p>
          </li>
          </ul>
-         <button class="more more2">もっとみる</button>
+         <div class="more more2"><h2>もっとみる</h2></div>
      </div>
    </div>
 
@@ -210,14 +222,14 @@
     <img src="./image/kawatitle.png" class="sky-title">
     <div class="container">
         <ul>
-          <li>
+          <li class="item-left">
             <img src="./image/kingyo-wagashi..png" class="item-img">
             <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
             <p class="name">金魚</p>
             <p class="price">¥450 (+tax)</p>
             <p class="store">みどり屋</p>
           </li>
-          <li>
+          <li class="item-right">
             <img src="./image/wagashi-kawaiikoi.png" class="item-img
             2">
             <p class="heart"><i class="fa fa-heart-o" aria-hidden="true" class="favorite"></i></p>
@@ -241,7 +253,7 @@
           <p class="store">＊＊屋</p>
        </li>
         </ul>
-        <button class="more">もっとみる</button>
+        <div class="more"><h2>もっとみる</h2></div>
      </div>
    </div>
 </main>
@@ -267,24 +279,30 @@
         <div class="container">
           <ul>
             <li>
-              <button class="contact facebook">
+              <div class="contact facebook">
                 <i class="fa fa-facebook" aria-hidden="true"></i>
-              </button>
+              </div>
             </li>
             <li>
-              <button class="contact twitter">
+              <div class="contact twitter">
                 <i class="fa fa-twitter" aria-hidden="true"></i>
-              </button>
+              </div>
             </li>
             <li>
-              <button class="contact insta">
+              <div class="contact insta">
                 <i class="fa fa-instagram" aria-hidden="true"></i>
-              </button>
+              </div>
             </li>
           </ul>
         </div>
       </div>
     </div>
+
+    <!-- <a class="menu-trigger" >
+       <span></span>
+       <span></span>
+       <span></span>
+   </a> -->
 </footer>
   <script type="text/javascript" src="script.js"></script>
 </body>
