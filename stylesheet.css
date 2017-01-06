@@ -439,7 +439,7 @@ img:hover{
 
 /*ハンバーガーメニュー*/
 #ham-menu{
-  border: 3px solid #E5D6B5:
+  /*border: 3px solid #E5D6B5:*/
   height: 50%;
   width: 50%;
   margin-top: 60px;
@@ -449,8 +449,8 @@ img:hover{
   right: 0;
   display: none;border-radius: 10%;
   font-weight: bold;
-  background-color: rgba(255, 255, 255, 0.95)
-  box-shadow
+  background-color: rgba(231, 228, 211, 0.9);
+
 }
 
 #ham-menu ul{
