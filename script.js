@@ -61,10 +61,6 @@ $('#ham-menu a').click(function(){
     }, 700)
 });
 
-// $('.bars').click(function(){
-//    $('#ham-menu').fadeIn();
-//  });
-
 
 
  $('.fa-bars').click(function(){
