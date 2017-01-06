@@ -11,8 +11,12 @@
     margin-top: 40px;
   }
 
-  .disappear{
+  header .disappear{
     display: inline-block;
+  }
+
+  .header-left {
+    font-size: 50px;
   }
   /*.text{
     text-align: left;
@@ -51,21 +55,19 @@
   #sky li{
     width: 45%;
     margin: 20px 10px;
-
   }
+
   #land li{
     width: 45%;
     margin: 20px 10px;
-
   }
   #river li{
     width: 45%;
     margin: 20px 10px;
-
   }
 
   .item-img, .item-img2{
-    width: 100%;
+    width: 60%;
     height: auto;
   }
   #sky .pc{
@@ -79,11 +81,39 @@
   }
 
   .name{
-    font-size: 40px;
-  }
-  .price{
     font-size: 30px;
   }
-  .store{
+  .price{
     font-size: 20px;
+  }
+  .store{
+    font-size: 15px;
+  }
+
+  .piyo{
+    padding:200px 0 400px 0;
+    background-size: cover;
+    /*text-align:center;*/
+    background-position: 20% 40%;
+  }
+  .usagidayo{
+    padding:200px 0 400px 0;
+    background-size: cover;
+    min-width: 800px;
+    background-position: center center;
+  }
+
+  .kingyo{
+    padding:200px 0 400px 0;
+    background-size:cover;
+    /*text-align:center;*/
+    /*position: center center;*/
+      background-position: 20% 40%;
+  }
+
+  .header-right .button i{
+    font-size: 4rem;
+    margin-left: 5px;
+    margin-top: 5px;
+    transition: all 0.3s;
   }
