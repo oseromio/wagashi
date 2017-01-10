@@ -52,16 +52,7 @@
     height: 100%;
   }
 
-  #sky li{
-    width: 45%;
-    margin: 20px 10px;
-  }
-
-  #land li{
-    width: 45%;
-    margin: 20px 10px;
-  }
-  #river li{
+  #sky li, #land li, #river li{
     width: 45%;
     margin: 20px 10px;
   }
