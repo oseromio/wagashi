@@ -1,8 +1,18 @@
-body {
-     font-family: "Tsukushi A round gothic", "santyoume-font";
-      }
 
-.header{
+@font-face {
+	font-family: 'Tsukushi maru gothic';
+	src: url(./font/TsukushiBMaruGothic.ttc);
+}
+
+body {
+  font-family: 'Tsukushi maru gothic';
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.header-inner{
   background-color: rgba(255, 255, 255, 0);
   border: 0px solid #E7E7DB;
   width: 100%;
@@ -10,7 +20,6 @@ body {
   position: fixed;
   top: 0;
   z-index: 10;
-  box-shadow: 1px 1px 3px #E5D6B5;
 }
 
 header{
@@ -23,6 +32,7 @@ header{
 li{
   list-style: none;
 }
+
 .container{
   width: 100%;
   padding: 0 15px;
@@ -30,40 +40,36 @@ li{
   text-align: center;
   max-width: 970px;
 }
+
+.header-right h3{
+  color: #A4D2B1;
+  text-decoration: none;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+.header-right h3:hover{
+  text-decoration: none;
+  color: #EB704C;
+  transform: scale(1.05)
+}
 .top-img{
   width: auto;
-  /*height: 700px;*/
 }
-/*header.button{
-  border-radius: 50%;
-  background-color:white;
-  width: 30%;
-  height: 30%;
-  border: 0;
-  background-color: white;
-}*/
-
-/*.header-right .button{
-  background-color: white;
-  border: 0px;
-  border-radius: 50%;
-  width: 30px;
-  height: 30px;
-}*/
-
 .header-right .button i{
-  font-size: 1rem;
+  font-size: 2.5rem;
   margin-left: 5px;
   margin-top: 5px;
   transition: all 0.3s;
 }
+
 .header-right i{
   color: #A4D2B1;
 }
 
 .header-right i:hover{
   color: #EB704C;
-  transform: scale(1.5)
+  transform: scale(1.05)
 }
 .header-right ul{
   float: right;
@@ -75,18 +81,17 @@ li{
 }
 
 header .disappear{
-  /*font-size: 30px;*/
   color: #A4D2B1;
   display: none;
 }
 
 .header-left {
-  font-size: 10px;
+  font-size: 25px;
   display: inline-block;
   float: left;
   color: #A4D2B1;
   margin: 0;
-  margin-top: 5px;
+  margin-top: 10px;
   margin-left: 30px;
   cursor: pointer;
   transition: all 0.3s;
@@ -94,7 +99,7 @@ header .disappear{
 
 .header-left:hover{
   color: #EB704C;
-  transform: scale(1.1)
+  transform: scale(1.05)
 }
 
 /*top*/
@@ -106,6 +111,7 @@ header .disappear{
   background-size: cover;
   background-position: center center;
 }
+
 .usagidayo{
   background-image: url(./image/bigpiyo.jpg);
   width:100%;
@@ -128,7 +134,6 @@ header .disappear{
 }
 .top-img{
   width: 100%;
-  /*margin-top: 0px;*/
 }
 
 .wagashi-topimg{
@@ -143,25 +148,31 @@ header .disappear{
   width: 120px;
   margin-right: 8px;
 }
+
 .cadegory-btn{
  text-align: center;
 }
+
 .sky:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
+
 .land:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
+
 .river:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
 
 .other:hover{
-  transform: scale(1.1);
+  transform: scale(1.05);
 }
+
 .title{
   text-align: center;
 }
+
 .title .text{
  font-size: 35px;
  color: #A4D2B1;
@@ -179,10 +190,12 @@ header .disappear{
   text-align: center;
   margin: 0 20px;
   }
+
   .other{
     display: none;
     transition: all 0.6s;
   }
+
 .item-left{
   margin-right: 15px;
 }
@@ -190,30 +203,37 @@ header .disappear{
 .item-right{
   margin-left: 15px;
 }
+
 /*sky*/
+
+#sky .container{
+  padding-bottom: 40px;
+}
 #sky ul{
   padding-left: 0px;
 }
+
 .sky-title{
   width: 100%;
   height: 100%;
   margin-top: 20px;
 }
+
+.sky-title:hover{
+  cursor: default;
+}
+
 .item-img, .item-img2{
   border-radius:15%;
   width: 130px;
   height: auto;
-  /*margin: 0 30px;*/
   margin-top: 30px;
 }
-
-/*.item-img{
-  margin-right: px;
-}*/
 
 .item-img2{
   margin-left:0px;
 }
+
 #sky li{
   display: inline-block;
   text-align: center;
@@ -233,9 +253,11 @@ header .disappear{
 .name:hover{
   cursor: pointer;
 }
+
 .price{
   font-size: 15px;
 }
+
 .store{
   font-size: 40%;
 }
@@ -249,31 +271,30 @@ header .disappear{
 #sky .pc {
   display: none;
 }
+
 /*sky のbutton*/
- .more{
-border-radius: 10px;        /* CSS3草案 */
-    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
-    -moz-border-radius: 10px;
-    border:0;
-    width: 300px;
-    height: 70px;
-    background-color: #8EC6CC;
-    margin-top: 20px;
-    margin-right:40px;
-    margin-left: 40px;
-    margin-bottom: 50px;
-    transition: all 0.4s;
-    margin: 0 auto;
+.more{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border:0;
+  width: 300px;
+  height: 70px;
+  background-color: #8EC6CC;
+  margin-right:40px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  transition: all 0.4s;
+  margin: 0 auto;
+  margin-top: 40px;
 }
 
 .more h2{
   font-size: 25px;
-  font-family: Tsukushi A round gothic;
+  font-family: "Tsukushi A round gothic";
   color: white;
   padding-top: 20px;
 }
-
-
 
 .more:hover{
   background-color: #458FB5;
@@ -293,30 +314,37 @@ border-radius: 10px;        /* CSS3草案 */
   display: inline-block;
   text-align: center;
 }
+
 .more2{
   background-color: #A4D2B1;
 }
+
 #land p{
   color: #B98D53;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
+
 #land li i{
   font-size: 3rem;
   margin-top: 20px;
   color: #E17183;
 }
+
 #land .pc {
   display: none;
 }
 
 /*river*/
 
+#river .container{
+  padding-bottom: 40px;
+}
+
 #river li{
   display: inline-block;
   text-align: center;
   padding-left: 0px;
 }
+
 #river p{
   color: #B98D53;
 }
@@ -339,13 +367,13 @@ border-radius: 10px;        /* CSS3草案 */
   margin-bottom: 70px;
 }
 
-
 /*footer*/
 
 footer{
   background-color: #E5D6B5;
   padding-bottom: 20px;
 }
+
 footer .contact{
   border-radius: 50%;
   width: 50px;
@@ -355,6 +383,14 @@ footer .contact{
   font-size: 3.5rem;
   border: 0;
   transition: all 0.3s;
+}
+
+#contact:hover{
+  cursor: default;
+}
+
+.contact-button:hover{
+  cursor: pointer;
 }
 
 .big-contact{
@@ -393,28 +429,24 @@ footer .contact{
   color: white;
 }
 
-/*.contact .fa-facebook{
-  margin-top: 20px;
-}*/
-
 .contact-button{
  text-align: center;
  padding-left: 0px;
- /*margin-right: 90px;*/
 }
+
 .facebook{
   background-color: #8EC6CC;
 }
+
 .twitter{
   background-color: #A4D2B1;
 }
+
 .insta {
   background-color: #377C97;
-  /*padding: 0px;*/
 }
 
 footer{
-  /*margin-bottom: 100px;*/
   margin-top: 60px;
 }
 
@@ -448,9 +480,9 @@ footer i:hover{
 img:hover{
   cursor: pointer;
 }
+
 /*ハンバーガーメニュー*/
 #ham-menu{
-  /*border: 3px solid #E5D6B5:*/
   height: 50%;
   width: 50%;
   margin-top: 60px;
@@ -461,12 +493,9 @@ img:hover{
   display: none;border-radius: 10%;
   font-weight: bold;
   background-color: rgba(231, 228, 211, 0.9);
-
 }
 
 #ham-menu ul{
-  /*margin-right: 30px;*/
-  /*background-color: skyblue;*/
   padding-left: 0px;
   padding: 10px 20px;
   opacity: 0.8;
@@ -507,22 +536,13 @@ img:hover{
 }
 
 .fa-heart-o:hover{
-  transform: scale(1.5);
+  transform: scale(1.05);
 }
 
 .fa-heart{
   transition: all 0.3s;
 }
-.fa-heart:hover{
-  transform: scale(1.5);
-}
 
-#contact:hover{
-  cursor: default;
-}
-.contact-button:hover{
-  cursor: pointer;
-}
-.sky-title:hover{
-  cursor: default;
+.fa-heart:hover{
+  transform: scale(1.05);
 }
