@@ -16,7 +16,7 @@
   }
 
   .header-left {
-    font-size: 50px;
+    font-size: 40px;
   }
   /*.text{
     text-align: left;
@@ -32,14 +32,14 @@
   }
 
   .cadegory-btn img{
-    margin-right: 10px;
+    margin-right: 25px;
     border-radius: 10%;
     margin-top: 30px;
   }
 
 .other{
   display: inline-block;
-  width: 25%;
+  width: 20%;
 }
 
   .cadegory-btn{
