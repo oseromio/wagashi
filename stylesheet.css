@@ -273,7 +273,7 @@ header .disappear{
 }
 
 /*sky のbutton*/
-.more{
+.btn-more{
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
@@ -287,21 +287,19 @@ header .disappear{
   transition: all 0.4s;
   margin: 0 auto;
   margin-top: 40px;
-}
 
-.more h2{
   font-size: 25px;
   font-family: "Tsukushi A round gothic";
   color: white;
   padding-top: 20px;
 }
 
-.more:hover{
+.btn-more:hover{
   background-color: #458FB5;
   cursor: pointer;
 }
 
-.more2:hover{
+.btn-more2:hover{
   background-color: #449C75;
 }
 
@@ -315,7 +313,7 @@ header .disappear{
   text-align: center;
 }
 
-.more2{
+.btn-more2{
   background-color: #A4D2B1;
 }
 
