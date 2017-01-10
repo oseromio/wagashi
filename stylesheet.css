@@ -34,14 +34,14 @@ li{
   width: auto;
   /*height: 700px;*/
 }
-header.button{
+/*header.button{
   border-radius: 50%;
   background-color:white;
   width: 30%;
   height: 30%;
   border: 0;
   background-color: white;
-}
+}*/
 
 /*.header-right .button{
   background-color: white;
@@ -52,7 +52,7 @@ header.button{
 }*/
 
 .header-right .button i{
-  font-size: 2rem;
+  font-size: 1rem;
   margin-left: 5px;
   margin-top: 5px;
   transition: all 0.3s;
@@ -67,7 +67,7 @@ header.button{
 }
 .header-right ul{
   float: right;
-  margin-top: 20px;
+  margin-top: 10px;
 }
 .header-right li{
   display: inline-block;
@@ -81,12 +81,12 @@ header .disappear{
 }
 
 .header-left {
-  font-size: 30px;
+  font-size: 10px;
   display: inline-block;
   float: left;
   color: #A4D2B1;
   margin: 0;
-  margin-top: 10px;
+  margin-top: 5px;
   margin-left: 30px;
   cursor: pointer;
   transition: all 0.3s;
@@ -168,6 +168,10 @@ header .disappear{
  margin-top: 20px;
 }
 
+.text:hover{
+  cursor: default;
+}
+
 .title .detail{
   font-size: 15px;
   color: #8EC6CC;
@@ -225,6 +229,10 @@ header .disappear{
 .name{
   font-size: 20px;
 }
+
+.name:hover{
+  cursor: pointer;
+}
 .price{
   font-size: 15px;
 }
@@ -269,6 +277,7 @@ border-radius: 10px;        /* CSS3草案 */
 
 .more:hover{
   background-color: #458FB5;
+  cursor: pointer;
 }
 
 .more2:hover{
@@ -326,6 +335,9 @@ border-radius: 10px;        /* CSS3草案 */
   display: none;
 }
 
+#land{
+  margin-bottom: 70px;
+}
 
 
 /*footer*/
@@ -488,4 +500,29 @@ img:hover{
 
 #ham-menu i{
   margin-right: 10px;
+}
+
+.fa-heart-o{
+  transition: all 0.3s;
+}
+
+.fa-heart-o:hover{
+  transform: scale(1.5);
+}
+
+.fa-heart{
+  transition: all 0.3s;
+}
+.fa-heart:hover{
+  transform: scale(1.5);
+}
+
+#contact:hover{
+  cursor: default;
+}
+.contact-button:hover{
+  cursor: pointer;
+}
+.sky-title:hover{
+  cursor: default;
 }
