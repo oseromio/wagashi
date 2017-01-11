@@ -286,7 +286,7 @@ header .disappear{
 }
 
 .store{
-  font-size: 20px;
+  font-size: 15px;
 }
 
 
@@ -305,6 +305,7 @@ header .disappear{
   font-size: 25px;
   color: white;
   padding-top: 20px;
+  margin-top: 40px;
 }
 
 .btn-more:hover{
