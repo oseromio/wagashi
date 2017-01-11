@@ -1,68 +1,90 @@
-body {
-     font-family: "Tsukushi A round gothic", "santyoume-font";
-      }
+@font-face {
+	font-family: 'maru game maru gothic';
+	src: url(./font/まるがめ本丸ゴシックR.otf);
+}
 
-header{
-  background-color: #E7E7DB;
-  border: 1px solid #E7E7DB;
-  width: 100%;
-  /*height:80px;*/
-  position: fixed;
-  top: 0;
-  z-index: 10;
+body {
+  font-family: 'maru game maru gothic';
+}
+
+a, a:hover{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a{
+  transition: all 0.3s;
+}
+
+a:hover{
+  transform: scale(1.1)
 }
 
 li{
   list-style: none;
 }
+
 .container{
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
   text-align: center;
+  max-width: 970px;
 }
+
+/* ヘッダー */
+header{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+.header-right h3{
+  color: #A4D2B1;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+.header-right h3:hover{
+  color: #EB704C;
+  transform: scale(1.05)
+}
+
 .top-img{
   width: auto;
-  /*height: 700px;*/
-}
-header.button{
-  border-radius: 50%;
-  background-color:white;
-  width: 30%;
-  height: 30%;
-  /*margin-top: 30px;
-  margin-right: 20px;
-  margin-left: 200px;*/
-  font-size: 1rem;
-  border: 0;
-  background-color: white;
 }
 
-.header-right .button{
-  background-color: white;
-  border: 0px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-}
-
-.header-right .button i{
-  font-size: 2rem;
-}
-header i{
-  color: #A4D2B1;
-}
-header ul{
+.header-right ul{
   float: right;
-  margin-top: 20px;
+  margin-top: 10px;
 }
-header li{
+
+.header-right li{
   display: inline-block;
   margin-right: 10px;
 }
 
-.header-left p{
-  font-size: 30px;
+.header-right .button{
+  font-size: 2.5rem;
+  margin-left: 5px;
+  margin-top: 5px;
+  transition: all 0.3s;
+  color: #A4D2B1;
+  cursor: pointer;
+}
+
+.header-right i:hover{
+  color: #EB704C;
+}
+
+header .disappear{
+  color: #A4D2B1;
+  display: none;
+}
+
+.header-left {
+  font-size: 25px;
   display: inline-block;
   float: left;
   color: #A4D2B1;
@@ -71,42 +93,84 @@ header li{
   margin-left: 30px;
 }
 
+#top-btn a:hover{
+  color: #EB704C;
+}
+
+#top-btn a{
+  font-size:30px;
+  color: #A4D2B1;
+}
+
+
+/*ハンバーガーメニュー*/
+#ham-menu{
+  width: 250px;
+  margin-top: 60px;
+  position: fixed;
+  right: 0;
+  display: none;
+  border-radius: 30px;
+  font-weight: bold;
+  background-color: rgba(231, 228, 211, 0.9);
+  box-shadow: 1px 4px 4px #D9D0A7;
+  border-left: 1px solid #D9D0A7;
+}
+#ham-menu ul{
+  padding-left: 0px;
+  padding: 10px 20px;
+  padding-bottom: 30px;
+}
+
+#ham-menu li{
+  font-size: 20px;;
+  border-bottom: 1px solid #635E5D;
+  width: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  line-height: 50px;
+  display: block;
+  transition: all 0.3s;
+  color: #635E5D;
+}
+
+#ham-menu .info{
+  font-size:15px;
+}
+
+#ham-menu i{
+  margin-right: 10px;
+}
+
+
 /*top*/
+.carousel-indicators{
+  z-index: 5;
+}
+
 .piyo{
   background-image: url(./image/piyo-wagashi.png);
-  width:100%;
-  padding:200px 0 400px 0;
-  background-size: cover;
-  text-align:center;
 }
-.mejiro{
-  background-image: url(./image/usagidayo.png);
-  width:100%;
-  padding:200px 0 400px 0;
-  background-size:cover;
-  min-width: 800px;
-  text-align:center;
+
+.usagidayo{
+  background-image: url(./image/bigpiyo.jpg);
 }
 
 .kingyo{
-  background-image: url(./image/kingyogyogyo.png);
+  background-image: url(./image/usapiyo.jpg);
+}
+
+.piyo, .usagidayo, .kingyo{
   width:100%;
-  padding:200px 0 400px 0;
-  background-size:cover;
-  text-align:center;
+  padding:100px 0 200px 0;
+  background-size: cover;
+  background-position: center center;
 }
 
 .favorite i{
   font-size: 2rem;
 }
-.top-img{
-  width: 100%;
-  /*margin-top: 0px;*/
-}
 
-.wagashi-topimg{
-  text-align: center;
-}
 #wagashi-carousel img {
   display: inline-block;
 }
@@ -116,191 +180,207 @@ header li{
   width: 120px;
   margin-right: 8px;
 }
+
 .cadegory-btn{
- /*text-align: center;*/
+ text-align: center;
 }
+
+.sky:hover, .land:hover, .river:hover, .other:hover{
+  transform: scale(1.05);
+}
+
 .title{
   text-align: center;
 }
+
 .title .text{
  font-size: 35px;
  color: #A4D2B1;
  margin-top: 20px;
 }
 
+.text:hover{
+  cursor: default;
+}
+
 .title .detail{
   font-size: 15px;
   color: #8EC6CC;
   width: 100%;
-  text-align: left;
+  text-align: center;
   margin: 0 20px;
   }
+
   .other{
     display: none;
+    transition: all 0.6s;
   }
 
+.item-left{
+  margin-right: 15px;
+}
+
+.item-right{
+  margin-left: 15px;
+}
+
 /*sky*/
-#sky ul{
+
+#sky .container{
+  padding-bottom: 40px;
+}
+
+#sky p, #land p, #river p{
+  color: #B98D53;
+  margin: 10px 0 ;
+}
+
+#sky .pc, #land .pc, #river .pc {
+  display: none;
+}
+#sky ul, #land ul, #river ul{
   padding-left: 0px;
 }
-.sky-title{
-  width: 100%;
-  height: 100%;
-  margin-top: 20px;
-}
-.item-img, .item-img2{
-  border-radius:15%;
-  width: 170px;
-  height: 119px;
-  /*margin: 0 30px;*/
-  margin-top: 30px;
-}
 
-/*.item-img{
-  margin-right: px;
-}*/
-
-.item-img2{
-  margin-left:0px;
-}
-#sky li{
+#sky li, #land li, #river li{
   display: inline-block;
   text-align: center;
   padding-left: 0px;
 }
 
-#sky li i{
+#sky li i, #land li i, #river li i{
   font-size: 3rem;
   margin-top: 5px;
   color: #E17183;
 }
 
-.name{
-  font-size: 28px;
-}
-.price{
-  font-size: 18px;
-}
-.store{
-  font-size: 18px;
-}
 
-#sky p{
-  color: #B98D53;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#sky .pc {
-  display: none;
-}
-/*sky のbutton*/
- main button{
-border-radius: 10px;        /* CSS3草案 */
-    -webkit-border-radius: 10px;    /* Safari,Google Chrome用 */
-    -moz-border-radius: 10px;
-    border:0;
-    width: 300px;
-    height: 70px;
-    background-color: #8EC6CC;
-    margin-top: 20px;
-    margin-right:40px;
-    margin-left: 40px;
-    margin-bottom: 50px;
-
-}
-
-.more{
-  font-size: 25px;
-  font-family: Tsukushi A round gothic;
-  color: white;
-  margin-top: 10px;
-}
-
-/*land*/
-#land ul{
-  padding-left: 0px;
-}
-
-#land li{
-  display: inline-block;
-  text-align: center;
-}
-.more2{
-  background-color: #A4D2B1;
-}
-#land p{
-  color: #B98D53;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-#land li i{
-  font-size: 3rem;
+.sky-title{
+  width: 100%;
+  height: 100%;
   margin-top: 20px;
-  color: #E17183;
-}
-#land .pc {
-  display: none;
 }
 
-/*river*/
-
-#river li{
-  display: inline-block;
-  text-align: center;
-  padding-left: 0px;
-}
-#river p{
-  color: #B98D53;
+.sky-title:hover{
+  cursor: default;
 }
 
-#river ul{
-  padding-left: 0px;
+.item-img, .item-img2{
+  border-radius:15%;
+  width: 130px;
+  height: auto;
+  margin-top: 30px;
 }
 
-#river li i{
-  font-size: 3rem;
-  margin-top: 10px;
-  color: #E17183;
-}
-
-#river .pc {
-  display: none;
+.item-img2{
+  margin-left:0px;
 }
 
 
-
-/*footer*/
-footer button{
-  border-radius: 50%;
-background-color:#ca3356;
-width: 50px;
-height: 50px;
-margin-top: 30px;
-margin-right: 10px;
-font-size: 2.5rem;
-border: 0;
+.name{
+  font-size: 20px;
 }
 
-.big-contact{
-  border: 0px solid #C79465;
-  background-color: #C79465;
-  padding-bottom: 20px;
+.name:hover{
+  cursor: pointer;
+}
+
+.price{
+  font-size: 15px;
+}
+
+.store{
+  font-size: 40%;
+}
+
+
+/*sky のbutton*/
+.btn-more{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border:0;
+  width: 300px;
+  height: 70px;
+  background-color: #8EC6CC;
+  margin: 40px 40px 50px 40px;
+  transition: all 0.4s;
+  margin: 0 auto;
+  font-size: 25px;
+  font-family: "Tsukushi A round gothic";
+  color: white;
   padding-top: 20px;
 }
 
-.big-contact h2{
+.btn-more:hover{
+  background-color: #458FB5;
+  cursor: pointer;
+}
+
+.btn-more2{
+  background-color: #A4D2B1;
+}
+
+.btn-more2:hover{
+  background-color: #449C75;
+}
+
+#land{
+  margin-bottom: 70px;
+}
+/*river*/
+
+#river .container{
+  padding-bottom: 40px;
+}
+
+/*footer*/
+footer{
+  background-color: #E5D6B5;
+  padding-bottom: 20px;
+  margin-top: 60px;
+}
+
+footer .contact{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-right: 10px;
+  font-size: 3.5rem;
+  border: 0;
+  transition: all 0.3s;
+}
+
+#contact:hover{
+  cursor: default;
+}
+
+.contact-button:hover{
+  cursor: pointer;
+}
+
+.big-contact{
+  background-color: #C79465;
+  padding-bottom: 20px;
+  padding-top: 10px;
   color: white;
   text-align: center;
+}
+
+.big-contact h2{
   font-size: 30px;
   font-weight: normal;
+  margin-bottom: 20px;
 }
 
 .big-contact li{
-  color: white;
   font-size: 20px;
-  text-align: center;
   margin-bottom: 20px;
+}
+
+.big-contact ul{
+  padding-left: 0px;
 }
 
 .contact-button li{
@@ -310,25 +390,61 @@ border: 0;
 
 .contact-button i{
   color: white;
-  margin: 0 auto;
 }
 
 .contact-button{
  text-align: center;
  padding-left: 0px;
- /*margin-right: 90px;*/
 }
+
 .facebook{
   background-color: #8EC6CC;
 }
+
 .twitter{
   background-color: #A4D2B1;
 }
+
 .insta {
   background-color: #377C97;
-  /*padding: 0px;*/
 }
 
-footer{
-  margin-bottom: 100px;
+.facebook:hover{
+  background-color: #458FB5;
+  transform: scale(1.1);
+}
+
+.twitter:hover{
+  background-color: #449C75;
+  transform: scale(1.1);
+}
+
+.insta:hover{
+  background-color: #41468D;
+  transform: scale(1.1);
+}
+
+footer i:hover{
+  transform: scale(1.1);
+}
+
+.contact i{
+  margin-top: 5px;
+}
+
+/*ハート*/
+.heart i{
+  cursor: pointer;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+.fa-heart-o, .fa-heart{
+  transition: all 0.3s;
+}
+
+.fa-heart-o:hover, .fa-heart:hover{
+  transform: scale(1.05);
 }
