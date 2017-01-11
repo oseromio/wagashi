@@ -105,15 +105,16 @@ header .disappear{
 
 /*ハンバーガーメニュー*/
 #ham-menu{
-  width: 50%;
-  max-width: 300px;
+  width: 250px;
   margin-top: 60px;
   position: fixed;
   right: 0;
   display: none;
-  border-radius: 10%;
+  border-radius: 30px;
   font-weight: bold;
   background-color: rgba(231, 228, 211, 0.9);
+  box-shadow: 1px 4px 4px #D9D0A7;
+  border-left: 1px solid #D9D0A7;
 }
 
 #ham-menu ul{
