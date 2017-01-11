@@ -88,10 +88,17 @@ header .disappear{
   transition: all 0.3s;
 }
 
-.header-left:hover{
+#top-btn a:hover{
   color: #EB704C;
-  transform: scale(1.05)
+  transform: scale(1.1)
 }
+
+#top-btn a{
+  font-size: 50px;
+  color: #A4D2B1;
+  transition: all 0.3s;
+}
+
 
 /*ハンバーガーメニュー*/
 #ham-menu{
