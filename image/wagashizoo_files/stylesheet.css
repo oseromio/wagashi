@@ -1,0 +1,551 @@
+
+@font-face {
+	font-family: 'Tsukushi maru gothic';
+	src: url(./font/TsukushiBMaruGothic.ttc);
+}
+
+body {
+  font-family: 'Tsukushi maru gothic';
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+.header-inner{
+  /*background-color: rgba(255, 255, 255, 0);*/
+  border: 0px solid #E7E7DB;
+  width: 100%;
+  /*height:80px;*/
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+header{
+  /*position: fixed;*/
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+
+li{
+  list-style: none;
+}
+
+.container{
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  text-align: center;
+  max-width: 970px;
+}
+
+.header-right h3{
+  color: #A4D2B1;
+  text-decoration: none;
+  font-size: 30px;
+  transition: all 0.3s;
+}
+
+.header-right h3:hover{
+  text-decoration: none;
+  color: #EB704C;
+  transform: scale(1.05)
+}
+.top-img{
+  width: auto;
+}
+.header-right .button i{
+  font-size: 2.5rem;
+  margin-left: 5px;
+  margin-top: 5px;
+  transition: all 0.3s;
+}
+
+.header-right i{
+  color: #A4D2B1;
+}
+
+.header-right i:hover{
+  color: #EB704C;
+  transform: scale(1.05)
+}
+.header-right ul{
+  float: right;
+  margin-top: 10px;
+}
+.header-right li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+header .disappear{
+  color: #A4D2B1;
+  display: none;
+}
+
+.header-left {
+  font-size: 25px;
+  display: inline-block;
+  float: left;
+  color: #A4D2B1;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 30px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.header-left:hover{
+  color: #EB704C;
+  transform: scale(1.05)
+}
+
+/*top*/
+
+.wagashi-topimg{
+  position: fixed;
+}
+
+.piyo{
+  background-image: url(./image/piyo-wagashi.png);
+  width:100%;
+  padding:100px 0 200px 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.usagidayo{
+  background-image: url(./image/bigpiyo.jpg);
+  width:100%;
+  padding:100px 0 200px 0;
+  background-size: cover;
+  background-position: center center;
+}
+
+.kingyo{
+  background-image: url(./image/usapiyo.jpg);
+  width:100%;
+  padding:100px 0 200px 0;
+  background-size: cover;;
+  position: center center;
+  background-position: center center;
+}
+
+.favorite i{
+  font-size: 2rem;
+}
+.top-img{
+  width: 100%;
+}
+
+.wagashi-topimg{
+  text-align: center;
+}
+#wagashi-carousel img {
+  display: inline-block;
+}
+
+.sky, .land, .river{
+  height: 120px;
+  width: 120px;
+  margin-right: 8px;
+}
+
+.cadegory-btn{
+ text-align: center;
+}
+
+.sky:hover{
+  transform: scale(1.05);
+}
+
+.land:hover{
+  transform: scale(1.05);
+}
+
+.river:hover{
+  transform: scale(1.05);
+}
+
+.other:hover{
+  transform: scale(1.05);
+}
+
+.title{
+  text-align: center;
+}
+
+.title .text{
+ font-size: 35px;
+ color: #A4D2B1;
+ margin-top: 20px;
+}
+
+.text:hover{
+  cursor: default;
+}
+
+.title .detail{
+  font-size: 15px;
+  color: #8EC6CC;
+  width: 100%;
+  text-align: center;
+  margin: 0 20px;
+  }
+
+  .other{
+    display: none;
+    transition: all 0.6s;
+  }
+
+.item-left{
+  margin-right: 15px;
+}
+
+.item-right{
+  margin-left: 15px;
+}
+
+/*sky*/
+
+#sky .container{
+  padding-bottom: 40px;
+}
+#sky ul{
+  padding-left: 0px;
+}
+
+.sky-title{
+  width: 100%;
+  height: 100%;
+  margin-top: 20px;
+}
+
+.sky-title:hover{
+  cursor: default;
+}
+
+.item-img, .item-img2{
+  border-radius:15%;
+  width: 130px;
+  height: auto;
+  margin-top: 30px;
+}
+
+.item-img2{
+  margin-left:0px;
+}
+
+#sky li{
+  display: inline-block;
+  text-align: center;
+  padding-left: 0px;
+}
+
+#sky li i{
+  font-size: 3rem;
+  margin-top: 5px;
+  color: #E17183;
+}
+
+.name{
+  font-size: 20px;
+}
+
+.name:hover{
+  cursor: pointer;
+}
+
+.price{
+  font-size: 15px;
+}
+
+.store{
+  font-size: 40%;
+}
+
+#sky p{
+  color: #B98D53;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#sky .pc {
+  display: none;
+}
+
+/*sky のbutton*/
+.btn-more{
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border:0;
+  width: 300px;
+  height: 70px;
+  background-color: #8EC6CC;
+  margin-right:40px;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  transition: all 0.4s;
+  margin: 0 auto;
+  margin-top: 40px;
+
+  font-size: 25px;
+  font-family: "Tsukushi A round gothic";
+  color: white;
+  padding-top: 20px;
+}
+
+.btn-more:hover{
+  background-color: #458FB5;
+  cursor: pointer;
+}
+
+.btn-more2:hover{
+  background-color: #449C75;
+}
+
+/*land*/
+#land ul{
+  padding-left: 0px;
+}
+
+#land li{
+  display: inline-block;
+  text-align: center;
+}
+
+.btn-more2{
+  background-color: #A4D2B1;
+}
+
+#land p{
+  color: #B98D53;
+}
+
+#land li i{
+  font-size: 3rem;
+  margin-top: 20px;
+  color: #E17183;
+}
+
+#land .pc {
+  display: none;
+}
+
+/*river*/
+
+#river .container{
+  padding-bottom: 40px;
+}
+
+#river li{
+  display: inline-block;
+  text-align: center;
+  padding-left: 0px;
+}
+
+#river p{
+  color: #B98D53;
+}
+
+#river ul{
+  padding-left: 0px;
+}
+
+#river li i{
+  font-size: 3rem;
+  margin-top: 10px;
+  color: #E17183;
+}
+
+#river .pc {
+  display: none;
+}
+
+#land{
+  margin-bottom: 70px;
+}
+
+/*footer*/
+
+footer{
+  background-color: #E5D6B5;
+  padding-bottom: 20px;
+}
+
+footer .contact{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: 30px;
+  margin-right: 10px;
+  font-size: 3.5rem;
+  border: 0;
+  transition: all 0.3s;
+}
+
+#contact:hover{
+  cursor: default;
+}
+
+.contact-button:hover{
+  cursor: pointer;
+}
+
+.big-contact{
+  border: 0px solid #C79465;
+  background-color: #C79465;
+  padding-bottom: 20px;
+  padding-top: 10px;
+}
+
+
+.big-contact h2{
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.big-contact li{
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.big-contact ul{
+  padding-left: 0px;
+}
+
+.contact-button li{
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.contact-button i{
+  color: white;
+}
+
+.contact-button{
+ text-align: center;
+ padding-left: 0px;
+}
+
+.facebook{
+  background-color: #8EC6CC;
+}
+
+.twitter{
+  background-color: #A4D2B1;
+}
+
+.insta {
+  background-color: #377C97;
+}
+
+footer{
+  margin-top: 60px;
+}
+
+.facebook:hover{
+  background-color: #458FB5;
+  transform: scale(1.1);
+}
+
+.twitter:hover{
+  background-color: #449C75;
+  transform: scale(1.1);
+}
+
+.insta:hover{
+  background-color: #41468D;
+  transform: scale(1.1);
+}
+
+footer i:hover{
+  transform: scale(1.1);
+}
+
+.contact i{
+  margin-top: 5px;
+}
+
+.heart i{
+  cursor: pointer;
+}
+
+img:hover{
+  cursor: pointer;
+}
+
+/*ハンバーガーメニュー*/
+#ham-menu{
+  height: 50%;
+  width: 50%;
+  max-width: 300px;
+  margin-top: 60px;
+  float: right;
+  position: relative;
+  top: 0;
+  right: 0;
+  display: none;border-radius: 10%;
+  font-weight: bold;
+  background-color: rgba(231, 228, 211, 0.9);
+}
+
+#ham-menu ul{
+  padding-left: 0px;
+  padding: 10px 20px;
+  opacity: 0.8;
+  padding-bottom: 30px;
+}
+
+#ham-menu li{
+  font-size: 20px;;
+  border-bottom: 1px solid #635E5D;
+  width: auto;
+  margin-right: 10px;
+  line-height: 50px;
+  display: block;
+  transition: all 0.3s;
+  color: #635E5D;
+  margin-top: 10px;
+}
+
+#ham-menu .info{
+  font-size:15px;
+}
+
+#ham-menu li:hover{
+  cursor: pointer;
+  transform: scale(1.1)
+}
+
+#ham-menu a{
+  text-decoration: none;
+}
+
+#ham-menu i{
+  margin-right: 10px;
+}
+
+.fa-heart-o{
+  transition: all 0.3s;
+}
+
+.fa-heart-o:hover{
+  transform: scale(1.05);
+}
+
+.fa-heart{
+  transition: all 0.3s;
+}
+
+.fa-heart:hover{
+  transform: scale(1.05);
+}
