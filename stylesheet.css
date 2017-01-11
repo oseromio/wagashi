@@ -7,8 +7,17 @@ body {
   font-family: 'maru game maru gothic';
 }
 
-a:hover{
+a, a:hover{
   text-decoration: none;
+  cursor: pointer;
+}
+
+a{
+  transition: all 0.3s;
+}
+
+a:hover{
+  transform: scale(1.1)
 }
 
 li{
@@ -29,7 +38,6 @@ header{
   top: 0;
   z-index: 10;
   width: 100%;
-  text-decoration: none;
 }
 
 .header-right h3{
@@ -68,7 +76,6 @@ header{
 
 .header-right i:hover{
   color: #EB704C;
-  transform: scale(1.05)
 }
 
 header .disappear{
@@ -84,19 +91,15 @@ header .disappear{
   margin: 0;
   margin-top: 10px;
   margin-left: 30px;
-  cursor: pointer;
-  transition: all 0.3s;
 }
 
 #top-btn a:hover{
   color: #EB704C;
-  transform: scale(1.1)
 }
 
 #top-btn a{
-  font-size: 50px;
+  font-size:30px;
   color: #A4D2B1;
-  transition: all 0.3s;
 }
 
 
@@ -133,15 +136,6 @@ header .disappear{
 
 #ham-menu .info{
   font-size:15px;
-}
-
-#ham-menu li:hover{
-  cursor: pointer;
-  transform: scale(1.1)
-}
-
-#ham-menu a{
-  text-decoration: none;
 }
 
 #ham-menu i{
