@@ -1,32 +1,14 @@
-
 @font-face {
-	font-family: 'Tsukushi maru gothic';
-	src: url(./font/TsukushiBMaruGothic.ttc);
+	font-family: 'maru game maru gothic';
+	src: url(./font/まるがめ本丸ゴシックR.otf);
 }
 
 body {
-  font-family: 'Tsukushi maru gothic';
+  font-family: 'maru game maru gothic';
 }
 
 a:hover{
   text-decoration: none;
-}
-
-.header-inner{
-  background-color: rgba(255, 255, 255, 0);
-  border: 0px solid #E7E7DB;
-  width: 100%;
-  /*height:80px;*/
-  position: fixed;
-  top: 0;
-  z-index: 10;
-}
-
-header{
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  width: 100%;
 }
 
 li{
@@ -41,43 +23,52 @@ li{
   max-width: 970px;
 }
 
+/* ヘッダー */
+header{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  text-decoration: none;
+}
+
 .header-right h3{
   color: #A4D2B1;
-  text-decoration: none;
   font-size: 30px;
   transition: all 0.3s;
 }
 
 .header-right h3:hover{
-  text-decoration: none;
   color: #EB704C;
   transform: scale(1.05)
 }
+
 .top-img{
   width: auto;
 }
-.header-right .button i{
+
+.header-right ul{
+  float: right;
+  margin-top: 10px;
+}
+
+.header-right li{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.header-right .button{
   font-size: 2.5rem;
   margin-left: 5px;
   margin-top: 5px;
   transition: all 0.3s;
-}
-
-.header-right i{
   color: #A4D2B1;
+  cursor: pointer;
 }
 
 .header-right i:hover{
   color: #EB704C;
   transform: scale(1.05)
-}
-.header-right ul{
-  float: right;
-  margin-top: 10px;
-}
-.header-right li{
-  display: inline-block;
-  margin-right: 10px;
 }
 
 header .disappear{
@@ -102,43 +93,83 @@ header .disappear{
   transform: scale(1.05)
 }
 
+/*ハンバーガーメニュー*/
+#ham-menu{
+  width: 50%;
+  max-width: 300px;
+  margin-top: 60px;
+  position: fixed;
+  right: 0;
+  display: none;
+  border-radius: 10%;
+  font-weight: bold;
+  background-color: rgba(231, 228, 211, 0.9);
+}
+
+#ham-menu ul{
+  padding-left: 0px;
+  padding: 10px 20px;
+  padding-bottom: 30px;
+}
+
+#ham-menu li{
+  font-size: 20px;;
+  border-bottom: 1px solid #635E5D;
+  width: auto;
+  margin-top: 10px;
+  margin-right: 10px;
+  line-height: 50px;
+  display: block;
+  transition: all 0.3s;
+  color: #635E5D;
+}
+
+#ham-menu .info{
+  font-size:15px;
+}
+
+#ham-menu li:hover{
+  cursor: pointer;
+  transform: scale(1.1)
+}
+
+#ham-menu a{
+  text-decoration: none;
+}
+
+#ham-menu i{
+  margin-right: 10px;
+}
+
+
 /*top*/
+.carousel-indicators{
+  z-index: 5;
+}
 
 .piyo{
   background-image: url(./image/piyo-wagashi.png);
-  width:100%;
-  padding:100px 0 200px 0;
-  background-size: cover;
-  background-position: center center;
 }
 
 .usagidayo{
   background-image: url(./image/bigpiyo.jpg);
-  width:100%;
-  padding:100px 0 200px 0;
-  background-size: cover;
-  background-position: center center;
 }
 
 .kingyo{
   background-image: url(./image/usapiyo.jpg);
+}
+
+.piyo, .usagidayo, .kingyo{
   width:100%;
   padding:100px 0 200px 0;
-  background-size: cover;;
-  position: center center;
+  background-size: cover;
   background-position: center center;
 }
 
 .favorite i{
   font-size: 2rem;
 }
-.top-img{
-  width: 100%;
-}
 
-.wagashi-topimg{
-  text-align: center;
-}
 #wagashi-carousel img {
   display: inline-block;
 }
@@ -153,19 +184,7 @@ header .disappear{
  text-align: center;
 }
 
-.sky:hover{
-  transform: scale(1.05);
-}
-
-.land:hover{
-  transform: scale(1.05);
-}
-
-.river:hover{
-  transform: scale(1.05);
-}
-
-.other:hover{
+.sky:hover, .land:hover, .river:hover, .other:hover{
   transform: scale(1.05);
 }
 
@@ -209,9 +228,31 @@ header .disappear{
 #sky .container{
   padding-bottom: 40px;
 }
-#sky ul{
+
+#sky p, #land p, #river p{
+  color: #B98D53;
+  margin: 10px 0 ;
+}
+
+#sky .pc, #land .pc, #river .pc {
+  display: none;
+}
+#sky ul, #land ul, #river ul{
   padding-left: 0px;
 }
+
+#sky li, #land li, #river li{
+  display: inline-block;
+  text-align: center;
+  padding-left: 0px;
+}
+
+#sky li i, #land li i, #river li i{
+  font-size: 3rem;
+  margin-top: 5px;
+  color: #E17183;
+}
+
 
 .sky-title{
   width: 100%;
@@ -234,17 +275,6 @@ header .disappear{
   margin-left:0px;
 }
 
-#sky li{
-  display: inline-block;
-  text-align: center;
-  padding-left: 0px;
-}
-
-#sky li i{
-  font-size: 3rem;
-  margin-top: 5px;
-  color: #E17183;
-}
 
 .name{
   font-size: 20px;
@@ -262,15 +292,6 @@ header .disappear{
   font-size: 40%;
 }
 
-#sky p{
-  color: #B98D53;
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-#sky .pc {
-  display: none;
-}
 
 /*sky のbutton*/
 .btn-more{
@@ -281,13 +302,9 @@ header .disappear{
   width: 300px;
   height: 70px;
   background-color: #8EC6CC;
-  margin-right:40px;
-  margin-left: 40px;
-  margin-bottom: 50px;
+  margin: 40px 40px 50px 40px;
   transition: all 0.4s;
   margin: 0 auto;
-  margin-top: 40px;
-
   font-size: 25px;
   font-family: "Tsukushi A round gothic";
   color: white;
@@ -299,77 +316,28 @@ header .disappear{
   cursor: pointer;
 }
 
-.btn-more2:hover{
-  background-color: #449C75;
-}
-
-/*land*/
-#land ul{
-  padding-left: 0px;
-}
-
-#land li{
-  display: inline-block;
-  text-align: center;
-}
-
 .btn-more2{
   background-color: #A4D2B1;
 }
 
-#land p{
-  color: #B98D53;
+.btn-more2:hover{
+  background-color: #449C75;
 }
 
-#land li i{
-  font-size: 3rem;
-  margin-top: 20px;
-  color: #E17183;
+#land{
+  margin-bottom: 70px;
 }
-
-#land .pc {
-  display: none;
-}
-
 /*river*/
 
 #river .container{
   padding-bottom: 40px;
 }
 
-#river li{
-  display: inline-block;
-  text-align: center;
-  padding-left: 0px;
-}
-
-#river p{
-  color: #B98D53;
-}
-
-#river ul{
-  padding-left: 0px;
-}
-
-#river li i{
-  font-size: 3rem;
-  margin-top: 10px;
-  color: #E17183;
-}
-
-#river .pc {
-  display: none;
-}
-
-#land{
-  margin-bottom: 70px;
-}
-
 /*footer*/
-
 footer{
   background-color: #E5D6B5;
   padding-bottom: 20px;
+  margin-top: 60px;
 }
 
 footer .contact{
@@ -392,25 +360,21 @@ footer .contact{
 }
 
 .big-contact{
-  border: 0px solid #C79465;
   background-color: #C79465;
   padding-bottom: 20px;
   padding-top: 10px;
-}
-
-
-.big-contact h2{
   color: white;
   text-align: center;
+}
+
+.big-contact h2{
   font-size: 30px;
   font-weight: normal;
   margin-bottom: 20px;
 }
 
 .big-contact li{
-  color: white;
   font-size: 20px;
-  text-align: center;
   margin-bottom: 20px;
 }
 
@@ -444,10 +408,6 @@ footer .contact{
   background-color: #377C97;
 }
 
-footer{
-  margin-top: 60px;
-}
-
 .facebook:hover{
   background-color: #458FB5;
   transform: scale(1.1);
@@ -471,6 +431,7 @@ footer i:hover{
   margin-top: 5px;
 }
 
+/*ハート*/
 .heart i{
   cursor: pointer;
 }
@@ -479,68 +440,10 @@ img:hover{
   cursor: pointer;
 }
 
-/*ハンバーガーメニュー*/
-#ham-menu{
-  height: 50%;
-  width: 50%;
-  margin-top: 60px;
-  float: right;
-  position: relative;
-  top: 0;
-  right: 0;
-  display: none;border-radius: 10%;
-  font-weight: bold;
-  background-color: rgba(231, 228, 211, 0.9);
-}
-
-#ham-menu ul{
-  padding-left: 0px;
-  padding: 10px 20px;
-  opacity: 0.8;
-  padding-bottom: 30px;
-}
-
-#ham-menu li{
-  font-size: 20px;;
-  border-bottom: 1px solid #635E5D;
-  width: auto;
-  margin-right: 10px;
-  line-height: 50px;
-  display: block;
-  transition: all 0.3s;
-  color: #635E5D;
-  margin-top: 10px;
-}
-
-#ham-menu .info{
-  font-size:15px;
-}
-
-#ham-menu li:hover{
-  cursor: pointer;
-  transform: scale(1.1)
-}
-
-#ham-menu a{
-  text-decoration: none;
-}
-
-#ham-menu i{
-  margin-right: 10px;
-}
-
-.fa-heart-o{
+.fa-heart-o, .fa-heart{
   transition: all 0.3s;
 }
 
-.fa-heart-o:hover{
-  transform: scale(1.05);
-}
-
-.fa-heart{
-  transition: all 0.3s;
-}
-
-.fa-heart:hover{
+.fa-heart-o:hover, .fa-heart:hover{
   transform: scale(1.05);
 }
