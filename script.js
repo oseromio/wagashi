@@ -19,22 +19,8 @@ $(function(){
       }
   });
 
-// トップへ戻るボタン
-  $('#top-btn').click(function(){
-    $('html,body').animate({
-      'scrollTop': 0
-    }, 500);
-  });
 // ページ内リンク
   $('.cadegory-btn a').click(function(){
-    var id = $(this).attr('href');
-    var position = $(id).offset().top -50;
-      $('html, body').animate({
-        'scrollTop': position
-    }, 700)
-  });
-
-  $('.disappear a').click(function(){
     var id = $(this).attr('href');
     var position = $(id).offset().top -50;
       $('html, body').animate({
@@ -60,4 +46,13 @@ $(function(){
       $('#ham-menu').fadeOut();
    }
     });
+
+  $('header a').click(function(){
+    var id = $(this).attr('href');
+    var position = $(id).offset().top -50;
+
+    $('html, body').animate({
+      scrollTop: position
+    }, 500);
+  });
   });
